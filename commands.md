@@ -1,0 +1,4 @@
+-"django-admin startproject projectname" --> to start a django project which also creates all necessary folders and files for you in the current directory
+-"conda create --name projectname python=3.7" --> to create a conda venv named projectname
+-"source activate projectname" --> activating the venv named projectname
+-"source deactivate" --> deactivating the venv named projectname
