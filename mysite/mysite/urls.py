@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
-#newly creates apps need to be pointed by a URLconf
+#newly created apps need to be pointed by a URLconf
 #to do that add their path in the urlpatterns
 #django checks for patterns matching in urlpatterns
 #if match happens it proceeds to that app.urls file
