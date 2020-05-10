@@ -5,3 +5,9 @@
 -"python manage.py runserver" --> to launch the site locally, also run the command when in the directory containing manage.py
 -"python manage.py startapp appname" --> to create an app belonging to the site which also creates all necessary folders and files for you in the appname directory
 -"sudo lsof -t -i tcp:8000 | xargs kill -9" --> to kill an existing process in the port 8000
+-"python manage.py migrate" --------------------------------\
+-"python manage.py makemigrations appname" ------------\____ stuff for database management 
+-"python manage.py sqlmigrate appname 0001" ------------/
+-"python manage.py shell" -----------------------------------/
+-"python mange.py createsuperuser" --> to create an admin user by entering appropriate data in the prompts followed by the command
+
