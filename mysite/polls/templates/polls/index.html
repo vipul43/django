@@ -1,4 +1,7 @@
 <!-- NOTE: the squigly, percent symbol is from django -->
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
 
 {% if latest_questions_list %}
     <ul>
