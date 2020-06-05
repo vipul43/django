@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<style>
+
+  body{
+		background-color: darkslateblue;
+	}
+
+  .btn-danger{
+		background-color: #ffae19;
+		border-color: #e59400;
+	}
+
+  .center-column{
+		width:600px;
+		margin: 20px auto;
+		padding:20px;
+		background-color: #fff;
+		border-radius: 3px;
+		box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
+	}
+
+  .delete-options {
+    text-align: center;
+		background-color: #906abd;
+		margin: 10px;
+		padding: 20px;
+		border-radius: 3px;
+		color: #fff;
+		font-size: 16px;
+		box-shadow: 0px -1px 10px -4px rgba(0,0,0,0.75);
+  }
+
+
+</style>
+
+<div class="center-column">
+
+  <p>Are you sure you want to delete task "{{item}}"?</p>
+
+    <div class="delete-options">
+      <a class="btn btn-sm btn-info" href="{% url 'list' %}">cancel - changed your mind</a>
+    </div>
+    <div class="delete-options">
+      <form method="POST" action="">
+        {% csrf_token %}
+        <input class="btn btn-sm btn-danger" type="submit" name="delete-task" value="confirm - strong on your decision">
+      </form>
+    </div>
+</div>
