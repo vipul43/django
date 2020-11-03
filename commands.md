@@ -2,6 +2,7 @@
 -"conda create --name projectname python=3.7" --> to create a conda venv named projectname
 -"source activate projectname" --> activating the venv named projectname
 -"conda deactivate" --> deactivating the venv named projectname
+- Now that the environment is created, you need to install packages accordingly. First try 'pip install django' 
 -"python manage.py runserver" --> to launch the site locally, also run the command when in the directory containing manage.py
 -"python manage.py startapp appname" --> to create an app belonging to the site which also creates all necessary folders and files for you in the appname directory
 -"sudo lsof -t -i tcp:8000 | xargs kill -9" --> to kill an existing process in the port 8000
