@@ -36,6 +36,6 @@ sqlparse==0.4.1
 tensorboard==2.1.0
 tensorflow==2.1.0
 termcolor==1.1.0
-Twisted==20.3.0
+Twisted==22.1.0
 txaio==20.12.1
 zope.interface==5.2.0
